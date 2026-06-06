@@ -77,7 +77,7 @@ export const about = {
   ],
   /** A short, human note that shows personality. */
   personalNote:
-    "Outside of work I'm a dad of two, a half-marathon finisher, and a believer that personal well-being shows up directly in the quality of your work.",
+    "Outside of work I'm a dad of two daughters, husband, a half-marathon finisher, and a believer that personal well-being shows up directly in the quality of your work.",
 } as const;
 
 /* -------------------------------------------------------------------------- */
