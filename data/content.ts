@@ -31,8 +31,8 @@ export const site = {
   /** Used for SEO meta description + Open Graph. */
   description:
     "Product Manager. I turn messy problems and data into clear roadmaps, shipped products, and measurable outcomes.",
-  /** Production URL — update this once you deploy to Vercel. */
-  url: "https://petko.vercel.app", // [PLACEHOLDER] set to your real domain
+  /** Production URL — used for SEO, sitemap, and Open Graph. */
+  url: "https://milospetkov.com",
   /** Two-letter locale for <html lang> and OG. */
   locale: "en",
 } as const;
