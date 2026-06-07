@@ -1,5 +1,6 @@
 import { Mail, MapPin } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/brand";
+import { AccentIconBox } from "@/components/accent-icon-box";
 import { contact } from "@/data/content";
 import { Section, SectionHeader } from "@/components/section";
 import { Button } from "@/components/ui/button";
@@ -61,9 +62,9 @@ export function Contact() {
                     rel={href.startsWith("http") ? "noreferrer" : undefined}
                     className="flex items-center gap-4 px-5 py-4 transition-colors hover:bg-muted"
                   >
-                    <span className="flex size-9 items-center justify-center rounded-lg bg-accent-soft text-accent">
+                    <AccentIconBox>
                       <Icon className="size-5" />
-                    </span>
+                    </AccentIconBox>
                     <span className="min-w-0">
                       <span className="block text-xs uppercase tracking-widest text-muted-foreground">
                         {label}
@@ -73,9 +74,9 @@ export function Contact() {
                   </a>
                 ) : (
                   <div className="flex items-center gap-4 px-5 py-4">
-                    <span className="flex size-9 items-center justify-center rounded-lg bg-accent-soft text-accent">
+                    <AccentIconBox>
                       <Icon className="size-5" />
-                    </span>
+                    </AccentIconBox>
                     <span className="min-w-0">
                       <span className="block text-xs uppercase tracking-widest text-muted-foreground">
                         {label}

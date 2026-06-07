@@ -1,3 +1,4 @@
+import { AccentIconBox } from "@/components/accent-icon-box";
 import { skillGroups } from "@/data/content";
 import { Section, SectionHeader } from "@/components/section";
 import { Card } from "@/components/ui/card";
@@ -19,9 +20,9 @@ export function Skills() {
             <Reveal key={group.title} delay={(i % 3) * 0.06}>
               <Card className="h-full p-6 transition-colors hover:border-accent/40">
                 <div className="mb-4 flex items-center gap-3">
-                  <span className="flex size-9 items-center justify-center rounded-lg bg-accent-soft text-accent">
+                  <AccentIconBox>
                     <Icon className="size-5" />
-                  </span>
+                  </AccentIconBox>
                   <h3 className="text-base font-semibold">{group.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
