@@ -90,7 +90,7 @@ export function Hero() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href={contact.cv} download>
+              <a href={contact.cv} download={contact.cvDownloadName}>
                 <Download className="size-4" /> Download CV
               </a>
             </Button>

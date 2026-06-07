@@ -29,7 +29,7 @@
   /* === ACCENT (the single accent color) === */
   --accent: oklch(0.55 0.18 264);
   --accent-foreground: oklch(0.99 0 0);
-  --accent-soft: oklch(0.95 0.03 264);
+  --accent-soft: oklch(0.97 0.035 264);
 }
 
 .dark {
@@ -48,7 +48,7 @@
 
   --accent: oklch(0.68 0.16 264);
   --accent-foreground: oklch(0.16 0.004 285);
-  --accent-soft: oklch(0.3 0.06 264);
+  --accent-soft: oklch(0.52 0.11 264);
 }
 
 @theme inline {

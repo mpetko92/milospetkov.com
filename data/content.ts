@@ -46,8 +46,9 @@ export const contact = {
   location: "Niš, Serbia",
   linkedin: "https://www.linkedin.com/in/petko92/",
   github: "https://github.com/mpetko92",
-  /** Path to your CV PDF placed in /public. */
-  cv: "/cv.pdf",
+  /** CV file in /public and the filename used when visitors download it. */
+  cv: "/Milos Petkov.pdf",
+  cvDownloadName: "Milos Petkov.pdf",
 } as const;
 
 /* -------------------------------------------------------------------------- */
