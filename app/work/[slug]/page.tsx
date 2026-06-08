@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { SectionLink } from "@/components/section-link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { projects, site } from "@/data/content";
@@ -74,12 +74,12 @@ export default async function CaseStudyPage({
     <article className="pt-28 pb-20 sm:pt-36">
       <Container className="max-w-4xl">
         <Reveal>
-          <Link
+          <SectionLink
             href="/#work"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="size-4" /> Back to work
-          </Link>
+          </SectionLink>
 
           <p className="mt-8 text-sm font-medium uppercase tracking-widest text-accent">
             {project.context} · {project.period}
@@ -154,12 +154,12 @@ export default async function CaseStudyPage({
 
         <Reveal>
           <div className="mt-12 border-t border-border pt-10">
-            <Link
+            <SectionLink
               href="/#work"
               className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
             >
               <ArrowLeft className="size-4" /> Back to all work
-            </Link>
+            </SectionLink>
           </div>
         </Reveal>
       </Container>

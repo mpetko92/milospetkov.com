@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { SectionLink } from "@/components/section-link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Download, MapPin } from "lucide-react";
 import { LinkedinIcon } from "@/components/icons/brand";
@@ -85,9 +85,9 @@ export function Hero() {
 
           <motion.div variants={item} className="mt-9 flex flex-wrap gap-3">
             <Button asChild size="lg">
-              <Link href="/#work">
+              <SectionLink href="/#work">
                 View work <ArrowRight className="size-4" />
-              </Link>
+              </SectionLink>
             </Button>
             <Button asChild variant="outline" size="lg">
               <a href={contact.cv} download={contact.cvDownloadName}>

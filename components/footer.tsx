@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SectionLink } from "@/components/section-link";
 import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/brand";
 import { contact, navItems, site } from "@/data/content";
@@ -23,13 +23,13 @@ export function Footer() {
 
           <nav className="flex flex-wrap gap-x-6 gap-y-2" aria-label="Footer">
             {navItems.map((item) => (
-              <Link
+              <SectionLink
                 key={item.href}
                 href={`/${item.href}`}
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
                 {item.label}
-              </Link>
+              </SectionLink>
             ))}
           </nav>
 
